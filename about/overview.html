@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, user-scalable=no" />
+    <meta name="Description" content="젠어뷰(주)"/>
+    <meta name="Keywords" content="공초점 내시현미경을 제조하는 의료기기 전문 회사, LUMOS BP, LUMOS VU, AI CDSS"/>
+    <meta http-equiv="Author" content=""/>
+    <title>젠어뷰(주)</title>
+    <link rel="stylesheet" href="../assets/css/style.css">
+    <script src="../assets/js/jquery-3.4.1.js"></script>
+    <script src="../assets/js/common.js" defer></script>
+    <link rel="stylesheet" href="../assets/css/aos.css">
+    <script src="../assets/js/aos.js"></script>
+    <script>
+        $(function() {
+            $("#header_wrap").load("../include/header.html", function() {
+                gnbMenu(1, 1);
+            });
+            $("#footer_wrap").load("../include/footer.html");
+        });
+    </script>
+</head>
+<body>
+    <div class="wrap">
+        <!-- 헤더 -->
+        <div id="header_wrap"></div>
+        <!-- //헤더 -->
+
+        <!-- 본문내용 -->
+        <main class="container">
+            <!-- 서브 비주얼 -->
+            <section class="sub_visual bg_visual_about" data-aos="fade-zoom-in" data-aos-duration="2000" data-aos-offset="0">
+                <div class="visual_title inner">
+                    <h3 data-aos="fade-up">회사소개</h3>
+                    <h4 data-aos="fade-down" data-aos-delay="300">ABOUT</h4>
+                </div>
+                <div class="lnb">
+                    <ul class="lnbDep1">
+                        <li><a href="../about/overview.html">회사 개요</a></li>
+                        <li><a href="../about/vision.html">회사 비전</a></li>
+                        <li><a href="../about/organization.html">회사 조직도</a></li>
+                    </ul>
+                </div>
+            </section>
+            <!-- //서브 비주얼 -->
+
+            <section class="content inner">
+                <h5 class="con_title">
+                    그건 할 수 없어 라는 말을 들을 때마다 <br>
+                    <span>나는 성공이 가까웠음을 안다.</span>
+                </h5>
+                <div class="overview_con1">
+                    <img src="../images/about/img_overview01.jpg" alt="">
+                </div>
+                <div class="overview_con2">
+                    <dl>
+                        <dt>사업자번호</dt>
+                        <dd>194-88-01734</dd>
+                        <dt>업종 / 업태</dt>
+                        <dd>정보통신공사업 / 통신장비 외</dd>
+                        <dt>사업 분야</dt>
+                        <dd>정보통신/CCTV/디스플레이/관제시스템외</dd>
+                    </dl>
+                    <dl>
+                        <dt>주소</dt>
+                        <dd>경상북도 포항시 북구 흥해읍 한동로 558, 402호(한동대학교 창업보육센터)</dd>
+                        <dt>연락처</dt>
+                        <dd>010-2088-4206 / FAX 0504-279-4206</dd>
+                        <dt>이메일</dt>
+                        <dd>sivisionb33is@naver.com</dd>
+                    </dl>
+                </div>
+                <div class="overview_con3">
+                    <!-- * 카카오맵 - 지도퍼가기 -->
+                    <!-- 1. 지도 노드 -->
+                    <div id="daumRoughmapContainer1696574885248" class="root_daum_roughmap root_daum_roughmap_landing"></div>
+
+                    <!--
+                        2. 설치 스크립트
+                        * 지도 퍼가기 서비스를 2개 이상 넣을 경우, 설치 스크립트는 하나만 삽입합니다.
+                    -->
+                    <script charset="UTF-8" class="daum_roughmap_loader_script" src="https://ssl.daumcdn.net/dmaps/map_js_init/roughmapLoader.js"></script>
+
+                    <!-- 3. 실행 스크립트 -->
+                    <script charset="UTF-8">
+                        new daum.roughmap.Lander({
+                            "timestamp" : "1696574885248",
+                            "key" : "2gdrp",
+                            "mapWidth" : "1200",
+                            "mapHeight" : "500"
+                        }).render();
+                    </script>
+                </div>
+            </section>
+        </main>
+        <!-- //본문내용 -->
+
+        <!-- 푸터 -->
+        <div id="footer_wrap"></div>
+        <!-- //푸터 -->
+    </div>
+</body>
+</html>

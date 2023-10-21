@@ -1,0 +1,69 @@
+@charset "utf-8";
+
+
+/* 회사개요 */
+.overview_con1{position:relative;text-align:right;margin-bottom:var(--size120);}
+.overview_con1 img{position:relative;width:900px;height:300px;border-radius:var(--size20);overflow:hidden;z-index:1;}
+.overview_con1:after{content:'';position:absolute;top:120px;left:0;width:1100px;height:260px;background:var(--gray);border-radius:var(--size20);}
+
+.overview_con2{display:flex;margin:var(--size50) 0 var(--size120);}
+.overview_con2 dl{display:flex;flex-wrap:wrap;}
+.overview_con2 dl dt{width:22%;font-weight:700;color:var(--gray222);padding:var(--size20) 0;border-bottom:1px solid var(--grayeee);}
+.overview_con2 dl dt:before{content:'ㆍ';}
+.overview_con2 dl dd{width:78%;padding:var(--size20) 0;border-bottom:1px solid var(--grayeee);}
+
+.overview_con3{border-radius:var(--size20);overflow:hidden;}
+.overview_con3 > div{width:100% !important;height:500px;margin:-1px;}
+
+/* 회사비전 */
+.vision_con1{text-align:center;}
+
+
+
+/* 반응형 */
+@media all and (max-width: 1918.98px) {
+
+}
+
+@media all and (max-width: 1599.98px) {
+  
+}
+
+@media screen and (max-width: 1399.98px) {
+
+}
+
+@media screen and (max-width: 1199.98px) {
+  
+}
+
+@media screen and (max-width: 991.98px) {
+  .overview_con1{height:200px;margin-bottom:0;border-radius:var(--size20);overflow:hidden;}
+  .overview_con1 img{width:100%;}
+  .overview_con1:after{display:none;}
+}
+
+@media screen and (max-width: 900px) {
+  .overview_con2{flex-direction:column;}
+}
+
+/* 모바일 */
+@media screen and (max-width: 767.98px) {
+  
+}
+
+@media all and (max-width: 575.98px) {
+  .overview_con1{height:160px;}
+  .overview_con2 dl dt{width:27%;}
+  .overview_con2 dl dd{width:73%;}
+  .overview_con3 > div{height:400px;}
+}
+
+@media all and (max-width: 478.98px) {
+
+}
+
+@media all and (max-width: 358.98px) {
+  .overview_con2 dl dt{width:35%;}
+  .overview_con2 dl dd{width:65%;}
+}

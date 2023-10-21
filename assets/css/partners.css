@@ -1,0 +1,62 @@
+@charset "utf-8";
+
+/* 주요실적 */
+.performance_con{display:flex;justify-content:space-between;}
+.performance_con ul{width:50%;}
+.performance_con ul li{padding:var(--size14) 0;border-bottom:1px solid var(--grayeee);}
+.performance_con ul li:before{content:'ㆍ';}
+
+/* 인증 및 특허 */
+.certification_card{display:flex;gap:0 27px;}
+.certification_card li{flex-basis:280px;border:1px solid var(--grayddd);border-radius:var(--size20);overflow:hidden;}
+.certification_card li img{width:100%;}
+
+/* 파트너사 */
+.partner_con ul{display:flex;flex-wrap:wrap;align-items:center;}
+.partner_con ul li{display:flex;align-items:center;justify-content:center;width:20%;min-height:var(--size150);border-bottom:1px solid var(--grayeee);}
+
+/* 반응형 */
+@media all and (max-width: 1918.98px) {
+
+}
+
+@media all and (max-width: 1599.98px) {
+  
+}
+
+@media screen and (max-width: 1399.98px) {
+
+}
+
+@media screen and (max-width: 1199.98px) {
+  .partner_con ul li{width:25%;}
+}
+
+@media screen and (max-width: 991.98px) {
+  .performance_con figure{width:40%;}
+
+  .partner_con ul li{min-height:var(--size120);}
+  .partner_con ul li img{width:60%;}
+}
+
+/* 모바일 */
+@media screen and (max-width: 767.98px) {
+  .certification_card{flex-wrap:wrap;justify-content:space-between;gap:0;}
+  .certification_card li{flex-basis:48%;margin-bottom:var(--size20);}
+
+  .performance_con ul{width:100%;}
+  .performance_con figure{display:none;}
+}
+
+@media all and (max-width: 575.98px) {
+  .partner_con ul li{min-height:var(--size80);}
+  .partner_con ul li img{width:70%;}
+}
+
+@media all and (max-width: 478.98px) {
+
+}
+
+@media all and (max-width: 358.98px) {
+
+}

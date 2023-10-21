@@ -1,0 +1,173 @@
+@charset "utf-8";
+
+/* 디비시스 */
+.divisys_con{display:flex;flex-wrap:wrap;gap:0 36px;}
+.divisys_con > li{position:relative;width:31%;background:var(--gray);border-radius:var(--size20);margin-bottom:var(--size36);}
+.divisys_con .thumb{position:relative;width:100%;}
+.divisys_con .thumb img{width:100%;border-radius:var(--size20);overflow:hidden;}
+.divisys_con .card{margin:var(--size40) var(--size20) var(--size30) var(--size20);}
+.divisys_con .card .title{font-size:var(--size32);font-weight:700;color:var(--gray222);line-height:1.3;}
+.divisys_con .card .desc{color:var(--gray999);margin-top:var(--size14);}
+.divisys_con .card .desc > li:before{content:'ㆍ';}
+
+/* 영상관제 솔루션 */
+.video_control_con1{display:flex;flex-wrap:wrap;justify-content:space-between;}
+.video_control_con1 > li{display:flex;flex-wrap:wrap;align-content:space-between;position:relative;width:22.7%;margin-bottom:var(--size36);background:var(--gray);border-radius:var(--size20);}
+.video_control_con1 .thumb{position:relative;width:100%;}
+.video_control_con1 .thumb img{width:100%;border-radius:var(--size20);overflow:hidden;}
+.video_control_con1 .card{margin:var(--size40) var(--size20) var(--size10) var(--size30) ;}
+.video_control_con1 .card .title{font-size:var(--size32);font-weight:700;color:var(--gray222);line-height:1.3;}
+.video_control_con1 .card .desc{color:var(--gray999);margin-top:var(--size14);}
+
+/* 영상회의 솔루션 */
+.video_conference_title2{font-size:var(--size28);line-height:1.3;}
+
+.video_conference_con1 .con_box{border-top:1px solid var(--grayeee);margin:var(--size70) 0 var(--size140);}
+.video_conference_con1 .con_box > li{display:flex;align-items:center;padding:var(--size50) 0;border-bottom:1px solid var(--grayeee);}
+.video_conference_con1 .con_box > li i{display:flex;align-items:center;justify-content:center;width:160px;height:160px;border-radius:100px;background:var(--gray);}
+.video_conference_con1 .con_box > li span{display:inline-block;width:30%;font-size:var(--size32);font-weight:700;color:var(--gray222);margin-left:var(--size40);}
+.video_conference_con1 .con_box > li p{font-size:var(--size20);font-weight:700;color:var(--gray222);margin-bottom:var(--size8);}
+.video_conference_con1 .con_box ul li:before{content:'ㆍ';}
+
+.video_conference_con2{background:var(--secondary);padding-bottom:var(--size120);color:var(--white);}
+.video_conference_con2 .con_title{color:var(--white);}
+.video_conference_con2 .con2_box{display:flex;justify-content:space-between;margin-top:var(--size60);}
+.video_conference_con2 .con2_box > figure{width:35%;}
+.video_conference_con2 .con2_box > figure img{width:100%;border-radius:var(--size20);}
+.video_conference_con2 .con2_box > ul{width:60%;}
+.video_conference_con2 .con2_box > ul li{padding:var(--size6) 0;}
+.video_conference_con2 .con2_box > ul li:before{content:'ㆍ';}
+
+.video_conference_con3{display:flex;flex-wrap:wrap;justify-content:space-between;}
+.video_conference_con3 > li{position:relative;width:31%;background:var(--gray);border-radius:var(--size20);}
+.video_conference_con3 .thumb{position:relative;width:100%;}
+.video_conference_con3 .thumb img{width:100%;border-radius:var(--size20);overflow:hidden;}
+.video_conference_con3 .card{margin:var(--size40) var(--size20) var(--size30) var(--size20);}
+.video_conference_con3 .card .title{font-size:var(--size32);font-weight:700;color:var(--gray222);line-height:1.3;}
+.video_conference_con3 .card .desc{color:var(--gray999);margin-top:var(--size14);}
+.video_conference_con3 .card .desc > li:before{content:'ㆍ';}
+
+.video_conference_con4 .card_box{display:flex;flex-wrap:wrap;justify-content:space-between;margin-bottom:var(--size40);}
+.video_conference_con4 .card_box > li{position:relative;width:48.5%;background:var(--gray);border-radius:var(--size20);}
+.video_conference_con4 .card_box .card{margin:var(--size40) var(--size20) var(--size10) var(--size30);}
+.video_conference_con4 .card_box .card .title{font-size:var(--size32);font-weight:700;color:var(--gray222);line-height:1.3;margin-bottom:var(--size38);}
+.video_conference_con4 .card_box .thumb img{width:100%;border-radius:var(--size20);}
+
+/* 스마트폴 */
+.smartpole_con{display:flex;justify-content:space-between;margin-top:var(--size60);}
+.smartpole_con .con_box{width:70%;}
+.smartpole_con .con_box .con_box_img{display:flex;justify-content:space-between;gap:0 20px;}
+.smartpole_con .con_box .con_box_img img{border-radius:var(--size20);overflow:hidden;}
+.smartpole_con .con_box > p{font-size:var(--size20);font-weight:700;color:var(--gray222);margin:var(--size60) 0 var(--size20);}
+.smartpole_con .con_box .table_list{border-top:2px solid var(--gray222);}
+.smartpole_con .con_box .table_list thead th{font-size:var(--size16);font-weight:700;color:var(--gray222);padding:var(--size10) 0;border-bottom:1px solid var(--grayeee);border-left:1px solid var(--grayeee);}
+.smartpole_con .con_box .table_list tbody td{font-size:var(--size16);text-align:center;padding:var(--size10) 0;border-bottom:1px solid var(--grayeee);border-left:1px solid var(--grayeee);}
+.smartpole_con .con_box .table_list thead th:first-child,
+.smartpole_con .con_box .table_list tbody td:first-child{border-left:0;}
+
+/* 네트워크 페이징 솔루션 */
+.network_list{margin-top:var(--size14);}
+.network_list li:before{content:'ㆍ';}
+
+.network_con2{margin:var(--size80) 0 var(--size60)}
+
+/* 보안 솔루션 */
+.security_desc{margin-top:var(--size14);}
+.security_con2{margin:var(--size40) 0 var(--size100);}
+.security_con3{position:relative;padding:var(--size100) 0 var(--size120);margin-bottom:-10rem;background:var(--secondary);}
+.security_con3 .con_title_dep2{color:var(--white);}
+
+/* 기타 솔루션 */
+.etc_con{display:flex;flex-wrap:wrap;justify-content:space-between;}
+.etc_con > li{display:flex;flex-wrap:wrap;align-content:space-between;position:relative;width:31%;background:var(--secondary);border:1px solid var(--grayddd);border-radius:var(--size20);color:var(--grayddd);overflow:hidden;background:var(--secondary);}
+.etc_con .card{margin:var(--size40) var(--size20) var(--size30) var(--size30);}
+.etc_con .card .title{font-size:var(--size32);font-weight:700;color:var(--white);line-height:1.3;margin:var(--size14) 0;}
+.etc_con .card .desc{margin-top:var(--size8);}
+
+.etc_con > li:nth-child(2){background:var(--grayddd);color:var(--gray555);}
+.etc_con > li:nth-child(2) .card .title{color:var(--gray222);}
+
+/* 정보통신 공사 및 유지보수 */
+.maintenance_con{text-align:center;margin-top:var(--size100);}
+
+
+/* 반응형 */
+@media all and (max-width: 1918.98px) {
+
+}
+
+@media all and (max-width: 1599.98px) {
+  
+}
+
+@media screen and (max-width: 1399.98px) {
+
+}
+
+@media screen and (max-width: 1199.98px) {
+  .divisys_con{gap:0 var(--size20);}
+  .divisys_con > li{width:48%;margin-bottom:var(--size20);}
+
+  .video_control_con1 li{width:23%;margin-bottom:var(--size30);}
+}
+
+@media screen and (max-width: 991.98px) {
+  .video_control_con1 li{width:48%;}
+  .video_control_con1 .card{margin-bottom:var(--size30);}
+
+  .video_conference_con1 .con_box > li{display:grid;grid-template-columns:24vw auto;}
+  .video_conference_con1 .con_box > li i{grid-row:1 / span 2;}
+  .video_conference_con1 .con_box > li span{grid-column:2;margin:0;width:100%;}
+  .video_conference_con1 .con_box > li div{grid-column:2;}
+}
+
+/* 모바일 */
+@media screen and (max-width: 767.98px) {
+  .video_conference_title2{font-size:var(--size24);}
+  .card .title{font-size:var(--size26) !important;}
+  .card .title br{display:none;}
+  .box_type1{padding:var(--size30);}  
+
+  /* 영상회의 솔루션 */
+  .video_conference_con1 .con_box > li i{width:120px;height:120px;}
+  .video_conference_con1 .con_box > li i img{width:50%;}
+
+  .video_conference_con2 .con2_box{flex-direction:column;}
+  .video_conference_con2 .con2_box > figure{width:100%;margin-bottom:var(--size40);}
+  .video_conference_con2 .con2_box > ul{width:100%;}
+  
+  .video_conference_con3 > li{width:100%;margin-bottom:var(--size20);}
+  .video_conference_con4 .card_box li{width:100%;}
+  .video_conference_con4 .card_box li:nth-child(1){margin-bottom:var(--size20);}
+
+  .security_con3{padding-bottom:var(--size80);margin-bottom:-5.556rem;}
+
+  .etc_con > li{width:100%;margin-bottom:var(--size20);}
+  .etc_con > li .card{width:100%;}
+  .etc_con > li .thumb{width:100%;}
+  .etc_con > li .thumb img{width:100%;}
+}
+
+@media all and (max-width: 575.98px) {
+  .video_conference_title2{font-size:var(--size20);}
+  
+  .video_control_con1 li{width:100%;}
+
+  .video_conference_con1 .con_box > li{display:block;padding:var(--size30) 0;}
+  .video_conference_con1 .con_box > li i{width:80px;height:80px;margin-bottom:var(--size20);}
+  .video_conference_con1 .con_box > li i img{width:50%;}
+
+  .smartpole_con{margin-top:var(--size20)}
+  .smartpole_con figure{display:none;}
+  .smartpole_con .con_box{width:100%;}
+  .smartpole_con .con_box > p{margin:var(--size40) 0 var(--size10);}
+}
+
+@media all and (max-width: 478.98px) {
+  .divisys_con{gap:0;}
+  .divisys_con > li{width:100%;margin-bottom:var(--size30);}
+}
+
+@media all and (max-width: 358.98px) {
+
+}
