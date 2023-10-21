@@ -2,11 +2,9 @@
 
 /* 메인 비주얼 */
 .main_visual{position:relative;width:100%;height:100vh;}
-.main_visual:after{content:'';position:absolute;bottom:0;left:0;width:100%;height:35%;background:rgba(56,56,79,0.9);}
 .main_visual .main_visual_img{position:relative;width:100%;height:100%;overflow:hidden;}
 .main_visual .main_visual_img img{position:absolute;top:50%;left:50%;transform:translate(-50%, -50%);min-width:1920px;height:100%;}
-.main_visual .main_visual_text{display:flex;flex-wrap:wrap;align-items:center;flex-direction:row-reverse;
-  justify-content:center;position:absolute;top:65%;left:50%;transform:translate(-50%, -50%);width:1200px;color:var(--white);z-index:1;}
+.main_visual .main_visual_text{display:flex;flex-wrap:wrap;align-items:center;flex-direction:row-reverse;justify-content:center;position:absolute;top:65%;left:50%;transform:translate(-50%, -50%);width:1200px;color:var(--white);z-index:1;}
 .main_visual .main_visual_text > h3{flex:1 auto;font-size:var(--size110);font-weight:700;line-height:1;margin-left:5rem;}
 .main_visual .main_visual_text > h4{font-size:var(--size160);font-weight:700;line-height:1.2;}
 .main_visual .main_visual_text > p{font-size:var(--size24);margin-right:var(--size50);}
@@ -28,72 +26,6 @@
 .main_business .business_card .card .title{font-size:var(--size32);font-weight:700;line-height:1.3;}
 .main_business .business_card .card .desc{font-weight:600;margin-top:var(--size20);}
 .main_business .business_card .card .btn_more{position:absolute;bottom:0;left:0;width:var(--size48);height:var(--size48);border-radius:100%;background:var(--primary) url(../../images/icon/icon_arrow_right_20.svg) 50% 50% no-repeat;}
-
-/* 파트너사 */
-.main_partner{position:relative;background:var(--gray);padding-bottom:var(--size120);overflow:hidden;}
-.main_partner .con_title{z-index:1;}
-.main_partner:after{content:'';position:absolute;top:0;right:0;width:50%;height:100%;background:url(../../images/main/img_main_partners.svg) no-repeat;}
-
-:root {
-  --marquee-gap: 2rem;
-  --marquee-duration: 45s;
-  --scroll-start: 0;
-  --scroll-end: calc(-100% - var(--marquee-gap));
-}
-.marquee_wrap {
-  margin: 0 auto;
-  max-width: 100vw;  
-}
-.marquee {
-  display: flex;
-}
-.marquee > *+* {
-  margin-left: 2rem;
-  margin-left: var(--marquee-gap)
-}
-.marquee_box {
-  flex-shrink: 0;
-  display: flex;
-  align-items: center;
-  justify-content: space-around;
-  min-width: 100%;
-  animation: scroll-left 45s linear infinite;
-  animation: scroll-left var(--marquee-duration) linear infinite;
-  z-index:1;
-}
-.marquee_box > *+* {
-  margin-left: 2rem;
-  margin-left: var(--marquee-gap);
-}
-.marquee_tag {
-  text-decoration: none;
-}
-.marquee_tag {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  border-radius: 9999px;
-  width: 180px;
-  height: 180px;
-  background: var(--white);
-  overflow: hidden;
-}
-.marquee_tag_icon {
-  width: 140px;
-  height: auto;
-}
-
-@keyframes scroll-left {
-  0% {
-    transform: translateX(0);
-    transform: translateX(var(--scroll-start));
-  }
-
-  100% {
-    transform: translateX(calc(-100% - 2rem));
-    transform: translateX(var(--scroll-end));
-  }
-}
 
 /* 오시는길 */
 .main_location{background:url(../../images/main/img_main_location.jpg) 50% 0;padding-bottom:var(--size120);margin-bottom:-10rem;}
@@ -121,11 +53,6 @@
   .main_visual .main_visual_text > h4{font-size:var(--size140);line-height:1;}
   .main_visual .main_visual_text > p{margin-right:0;margin-top:var(--size40);}
 
-  .main_business .business_card li{width:32%;margin-bottom:var(--size20);}
-  .main_business .business_card .card{top:var(--size60);left:var(--size30);right:var(--size30);bottom:var(--size60);}
-  .main_business .business_card .card .title{font-size:var(--size28);line-height:1.2;}
-  .main_business .business_card .card .desc{font-size:var(--size16);}
-  .main_business .business_card .card .btn_more{width:var(--size40);height:var(--size40);background-size:40%;}
 }
 
 @media screen and (max-width: 991.98px) {
@@ -144,13 +71,9 @@
   .main_business .business_card li:nth-child(5),
   .main_business .business_card li:nth-child(6){margin-top:0;}
 
-  .marquee_tag{width:140px;height:140px;}
-  .marquee_tag_icon{width:100px;}
-
   .main_location{padding-bottom:var(--size80);margin-bottom:-5.556rem;}
   .main_location .location_wrap span{display:block;margin-right:0;margin-bottom:var(--size10);}
 
-  .main_partner:after{background-size:100%;}
 }
 
 @media all and (max-width: 575.98px) {
@@ -158,11 +81,6 @@
   .main_business .business_card .card .title{font-size:var(--size22);}
   .main_business .business_card .card .btn_more{width:var(--size32);height:var(--size32);background-size:40%;}
 
-  :root {
-    --marquee-gap: 1rem;
-  }
-  .marquee_tag{width:100px;height:100px;}
-  .marquee_tag_icon{width:80px;}
 }
 
 @media all and (max-width: 478.98px) {
