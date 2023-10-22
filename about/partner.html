@@ -10,13 +10,13 @@
     <title>젠어뷰(주)</title>
     <link rel="stylesheet" href="../assets/css/style.css">
     <script src="../assets/js/jquery-3.4.1.js"></script>
-    <script src="../assets/js/common.js"></script>
+    <script src="../assets/js/common.js" defer></script>
     <link rel="stylesheet" href="../assets/css/aos.css">
     <script src="../assets/js/aos.js"></script>
     <script>
         $(function() {
             $("#header_wrap").load("../include/header.html", function() {
-                gnbMenu(3, 3);
+                gnbMenu(3, 2);
             });
             $("#footer_wrap").load("../include/footer.html");
         });
@@ -31,72 +31,38 @@
         <!-- 본문내용 -->
         <main class="container">
             <!-- 서브 비주얼 -->
-            <section class="sub_visual bg_visual_partners" data-aos="fade-zoom-in" data-aos-duration="2000" data-aos-offset="0">
-                <div class="visual_title inner">
-                    <h3 data-aos="fade-up">주요실적 및 파트너사</h3>
-                    <h4 data-aos="fade-down" data-aos-delay="300">PARTNERS</h4>
-                </div>
-                <div class="lnb">
-                    <ul class="lnbDep1">
-                        <li><a href="../partners/performance.html">주요실적</a></li>
-                        <li><a href="../partners/certification.html">인증 및 특허</a></li>
-                        <li><a href="../partners/partner.html">파트너사</a></li>
-                    </ul>
+            <section class="sub_visual bg_visual_about" data-aos="fade-zoom-in" data-aos-duration="2000" data-aos-offset="0">
+                <div class="inner">
+                    <div class="visual_title">
+                        <h3 data-aos="fade-up">회사소개</h3>
+                    </div>
+                    <div class="lnb" data-aos="fade-up" data-aos-delay="200">
+                        <ul class="lnbDep1">
+                            <li><a href="../about/overview.html">회사소개</a></li>
+                            <li><a href="../about/partner.html">협력사/기관</a></li>
+                            <li><a href="../about/notice.html">소식</a></li>
+                            <li><a href="../about/location.html">찾아오시는 길</a></li>
+                        </ul>
+                    </div>
                 </div>
             </section>
             <!-- //서브 비주얼 -->
 
-            <section class="content inner">
-                <h5 class="con_title">
-                    파트너사 현황
-                </h5>
-                <div class="partner_con">
-                    <ul>
-                        <li><img src="../images/common/partners_logo01.jpg" alt=""></li>
-                        <li><img src="../images/common/partners_logo02.jpg" alt=""></li>
-                        <li><img src="../images/common/partners_logo03.jpg" alt=""></li>
-                        <li><img src="../images/common/partners_logo04.jpg" alt=""></li>
-                        <li><img src="../images/common/partners_logo05.jpg" alt=""></li>
-                        <li><img src="../images/common/partners_logo06.jpg" alt=""></li>
-                        <li><img src="../images/common/partners_logo07.jpg" alt=""></li>
-                        <li><img src="../images/common/partners_logo08.jpg" alt=""></li>
-                        <li><img src="../images/common/partners_logo09.jpg" alt=""></li>
-                        <li><img src="../images/common/partners_logo10.jpg" alt=""></li>
-                        <li><img src="../images/common/partners_logo11.jpg" alt=""></li>
-                        <li><img src="../images/common/partners_logo12.jpg" alt=""></li>
-                        <li><img src="../images/common/partners_logo13.jpg" alt=""></li>
-                        <li><img src="../images/common/partners_logo14.jpg" alt=""></li>
-                        <li><img src="../images/common/partners_logo15.jpg" alt=""></li>
-                        <li><img src="../images/common/partners_logo16.jpg" alt=""></li>
-                        <li><img src="../images/common/partners_logo17.jpg" alt=""></li>
-                        <li><img src="../images/common/partners_logo18.jpg" alt=""></li>
-                        <li><img src="../images/common/partners_logo19.jpg" alt=""></li>
-                        <li><img src="../images/common/partners_logo20.jpg" alt=""></li>
-                        <li><img src="../images/common/partners_logo21.jpg" alt=""></li>
-                        <li><img src="../images/common/partners_logo22.jpg" alt=""></li>
-                        <li><img src="../images/common/partners_logo23.jpg" alt=""></li>
-                        <li><img src="../images/common/partners_logo24.jpg" alt=""></li>
-                        <li><img src="../images/common/partners_logo25.jpg" alt=""></li>
-                        <li><img src="../images/common/partners_logo26.jpg" alt=""></li>
-                        <li><img src="../images/common/partners_logo27.jpg" alt=""></li>
-                        <li><img src="../images/common/partners_logo28.jpg" alt=""></li>
-                        <li><img src="../images/common/partners_logo29.jpg" alt=""></li>
-                        <li><img src="../images/common/partners_logo30.jpg" alt=""></li>
-                        <li><img src="../images/common/partners_logo31.jpg" alt=""></li>
-                        <li><img src="../images/common/partners_logo32.jpg" alt=""></li>
-                        <li><img src="../images/common/partners_logo33.jpg" alt=""></li>
-                        <li><img src="../images/common/partners_logo34.jpg" alt=""></li>
-                        <li><img src="../images/common/partners_logo35.jpg" alt=""></li>
-                        <li><img src="../images/common/partners_logo36.jpg" alt=""></li>
-                        <li><img src="../images/common/partners_logo37.jpg" alt=""></li>
-                        <li><img src="../images/common/partners_logo38.jpg" alt=""></li>
-                        <li><img src="../images/common/partners_logo39.jpg" alt=""></li>
-                        <li><img src="../images/common/partners_logo40.jpg" alt=""></li>
-                        <li><img src="../images/common/partners_logo41.jpg" alt=""></li>
-                        <li><img src="../images/common/partners_logo42.jpg" alt=""></li>
-                        <li><img src="../images/common/partners_logo43.jpg" alt=""></li>
-                        <li><img src="../images/common/partners_logo44.jpg" alt=""></li>
-                    </ul>
+            <section class="content">
+                <div class="inner">
+                    <h5 class="con_title" data-aos="fade-up" data-aos-delay="500" data-aos-offset="0">
+                        협력사/기관
+                    </h5>
+                    <div class="partner_con">
+                        <ul>
+                            <li><img src="../images/about/partner_logo01.jpg" alt=""></li>
+                            <li><img src="../images/about/partner_logo02.jpg" alt=""></li>
+                            <li><img src="../images/about/partner_logo03.jpg" alt=""></li>
+                            <li><img src="../images/about/partner_logo04.jpg" alt=""></li>
+                            <li><img src="../images/about/partner_logo05.jpg" alt=""></li>
+                            <li><img src="../images/about/partner_logo06.jpg" alt=""></li>
+                        </ul>
+                    </div>
                 </div>
             </section>
         </main>

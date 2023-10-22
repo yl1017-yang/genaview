@@ -89,15 +89,14 @@ html, body{-webkit-tap-highlight-color:transparent !important}
 .lnb{position:absolute;top:100px;right:0;}
 .lnb ul{display:flex;justify-content:space-between;align-items:center;}
 .lnb ul li{position:relative;padding:0 var(--size20);}
-.lnb ul li:after{content:'';position:absolute;top:38%;left:97%;width:8px;height:8px;background:var(--grayddd);border-radius:100px;}
-
+.lnb ul li:after{content:'';position:absolute;top:38%;left:95%;width:8px;height:8px;background:var(--grayddd);border-radius:100px;}
+.lnb ul li:last-child:after{background:none;}
 .lnb ul li a{display:inline-block;position:relative;color:var(--gray999);line-height:1.4;text-align:center;}
 .lnb ul li a.on{color:var(--gray222);font-weight:700;border-bottom:3px solid var(--primary);}
 
 /* 타이틀 */
-.con_title{display:inline-block;position:relative;font-size:var(--size52);font-weight:700;color:var(--gray222);line-height:1.2;margin:var(--size120) 0 var(--size80);}
+.con_title{display:inline-block;position:relative;font-size:var(--size52);font-weight:700;color:var(--gray222);line-height:1.2;margin:var(--size120) 0 var(--size60);}
 .con_title span{color:var(--primary);}
-.con_title.mb40{margin-bottom:var(--size40)}
 .con_title_dep2{font-size:var(--size32);font-weight:500;color:var(--gray222);}
 
 /* 박스타입 */
