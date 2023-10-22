@@ -120,8 +120,9 @@ input[type='text']:focus:-ms-input-placeholder{visibility:hidden}
 /* 폰트칼라 */
 :root {
   /* color */
-  --primary:#BE1622;
+  --primary:#00A0DF;
   --secondary:#38384F;
+  --point:#CE4A00;
   --gray222:#222;
   --gray555:#555;
   --gray999:#999;
@@ -160,7 +161,10 @@ input[type='text']:focus:-ms-input-placeholder{visibility:hidden}
   --size60:3.333rem;
   --size64:3.556rem;
   --size70:3.889rem;
+  --size72:4rem;
+  --size76:4.222rem;
   --size80:4.444rem;
+  --size86:4.778rem;
   --size90:5rem;
   --size100:5.556rem;
   --size110:6.111rem;
