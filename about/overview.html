@@ -16,7 +16,7 @@
     <script>
         $(function() {
             $("#header_wrap").load("../include/header.html", function() {
-                gnbMenu(1, 1);
+                gnbMenu(3, 1);
             });
             $("#footer_wrap").load("../include/footer.html");
         });
@@ -32,16 +32,18 @@
         <main class="container">
             <!-- 서브 비주얼 -->
             <section class="sub_visual bg_visual_about" data-aos="fade-zoom-in" data-aos-duration="2000" data-aos-offset="0">
-                <div class="visual_title inner">
-                    <h3 data-aos="fade-up">회사소개</h3>
-                    <h4 data-aos="fade-down" data-aos-delay="300">ABOUT</h4>
-                </div>
-                <div class="lnb">
-                    <ul class="lnbDep1">
-                        <li><a href="../about/overview.html">회사 개요</a></li>
-                        <li><a href="../about/vision.html">회사 비전</a></li>
-                        <li><a href="../about/organization.html">회사 조직도</a></li>
-                    </ul>
+                <div class="inner">
+                    <div class="visual_title">
+                        <h3 data-aos="fade-up">회사소개</h3>
+                    </div>
+                    <div class="lnb">
+                        <ul class="lnbDep1">
+                            <li><a href="../about/overview.html">회사소개</a></li>
+                            <li><a href="../about/partner.html">협력사/기관</a></li>
+                            <li><a href="../about/notice.html">소식</a></li>
+                            <li><a href="../about/location.html">찾아오시는 길</a></li>
+                        </ul>
+                    </div>
                 </div>
             </section>
             <!-- //서브 비주얼 -->
