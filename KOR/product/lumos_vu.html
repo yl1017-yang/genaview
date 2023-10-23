@@ -16,7 +16,7 @@
     <script>
         $(function() {
             $("#header_wrap").load("../include/header.html", function() {
-                gnbMenu(3, 2);
+                gnbMenu(1, 2);
             });
             $("#footer_wrap").load("../include/footer.html");
         });
@@ -31,17 +31,15 @@
         <!-- 본문내용 -->
         <main class="container">
             <!-- 서브 비주얼 -->
-            <section class="sub_visual bg_visual_about" data-aos="fade-zoom-in" data-aos-duration="2000" data-aos-offset="0">
+            <section class="sub_visual bg_visual_product" data-aos="fade-zoom-in" data-aos-duration="2000" data-aos-offset="0">
                 <div class="inner">
                     <div class="visual_title">
-                        <h3 data-aos="fade-up">회사소개</h3>
+                        <h3 data-aos="fade-up">제품소개</h3>
                     </div>
                     <div class="lnb" data-aos="fade-up" data-aos-delay="200">
                         <ul class="lnbDep1">
-                            <li><a href="../about/overview.html">회사소개</a></li>
-                            <li><a href="../about/partner.html">협력사/기관</a></li>
-                            <li><a href="../about/notice.html">소식</a></li>
-                            <li><a href="../about/location.html">찾아오시는 길</a></li>
+                            <li><a href="../product/lumos_bp.html">LUMOS BP</a></li>
+                            <li><a href="../product/lumos_vu.html">LUMOS VU</a></li>
                         </ul>
                     </div>
                 </div>
@@ -51,19 +49,31 @@
             <section class="content">
                 <div class="inner">
                     <h5 class="con_title" data-aos="fade-up" data-aos-delay="400" data-aos-offset="0">
-                        협력사/기관
+                        LUMOS VU
                     </h5>
-                    <div class="partner_con" data-aos="fade-up" data-aos-delay="500">
-                        <ul>
-                            <li><img src="../images/about/partner_logo01.jpg" alt=""></li>
-                            <li><img src="../images/about/partner_logo02.jpg" alt=""></li>
-                            <li><img src="../images/about/partner_logo03.jpg" alt=""></li>
-                            <li><img src="../images/about/partner_logo04.jpg" alt=""></li>
-                            <li><img src="../images/about/partner_logo05.jpg" alt=""></li>
-                            <li><img src="../images/about/partner_logo06.jpg" alt=""></li>
-                        </ul>
+                    <div class="product_con1">
+                        <div class="con_box">
+                            <p class="con_title_dep2">
+                                LUMOS VU는 공초점 형광현미경 원리를 이용한 <br>공초점 내시현미경(Probe-based Confocal <br>Laser Endo-Microscope) 입니다.
+                            </p>
+                            <p class="con_txt">
+                                <span>전용 프로브인 LUMOS BP와 결합되어 사용됩니다.</span>
+                                <span>형광물질로 염색된 조직에 빛을 투사하고 반사된 형광을 2D 이미지로 <br>형상화 하여 세포 조직의 영상을 저장하고 표시할 수 있는 영상 의료기기 입니다.</span>
+                                <span>Laser scanning Unit과 Signal processing Unit 그리고 <br>Display 장치로 구성되어 있습니다.</span>
+                            </p>
+                        </div>
+                        <figure class="img2">
+                            <img src="../images/product/img_vu01.png" alt="">
+                        </figure>
+                    </div>
+                    <div class="product_con2">
+                        <p>LUMOS VU</p>
+                        <figure>
+                            <img src="../images/product/img_vu02.jpg" alt="">
+                        </figure>
                     </div>
                 </div>
+
             </section>
         </main>
         <!-- //본문내용 -->

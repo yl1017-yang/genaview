@@ -16,7 +16,7 @@
     <script>
         $(function() {
             $("#header_wrap").load("../include/header.html", function() {
-                gnbMenu(3, 2);
+                gnbMenu(2, 4);
             });
             $("#footer_wrap").load("../include/footer.html");
         });
@@ -31,17 +31,17 @@
         <!-- 본문내용 -->
         <main class="container">
             <!-- 서브 비주얼 -->
-            <section class="sub_visual bg_visual_about" data-aos="fade-zoom-in" data-aos-duration="2000" data-aos-offset="0">
+            <section class="sub_visual bg_visual_skill" data-aos="fade-zoom-in" data-aos-duration="2000" data-aos-offset="0">
                 <div class="inner">
                     <div class="visual_title">
-                        <h3 data-aos="fade-up">회사소개</h3>
+                        <h3 data-aos="fade-up">응용기술</h3>
                     </div>
                     <div class="lnb" data-aos="fade-up" data-aos-delay="200">
                         <ul class="lnbDep1">
-                            <li><a href="../about/overview.html">회사소개</a></li>
-                            <li><a href="../about/partner.html">협력사/기관</a></li>
-                            <li><a href="../about/notice.html">소식</a></li>
-                            <li><a href="../about/location.html">찾아오시는 길</a></li>
+                            <li><a href="../skill/intro.html">기술 소개</a></li>
+                            <li><a href="../skill/range.html">응용 범위</a></li>
+                            <li><a href="../skill/ai_cdss.html">AI CDSS</a></li>
+                            <li><a href="../skill/gallery.html">Gallery</a></li>
                         </ul>
                     </div>
                 </div>
@@ -51,19 +51,36 @@
             <section class="content">
                 <div class="inner">
                     <h5 class="con_title" data-aos="fade-up" data-aos-delay="400" data-aos-offset="0">
-                        협력사/기관
+                        Gallery
                     </h5>
-                    <div class="partner_con" data-aos="fade-up" data-aos-delay="500">
-                        <ul>
-                            <li><img src="../images/about/partner_logo01.jpg" alt=""></li>
-                            <li><img src="../images/about/partner_logo02.jpg" alt=""></li>
-                            <li><img src="../images/about/partner_logo03.jpg" alt=""></li>
-                            <li><img src="../images/about/partner_logo04.jpg" alt=""></li>
-                            <li><img src="../images/about/partner_logo05.jpg" alt=""></li>
-                            <li><img src="../images/about/partner_logo06.jpg" alt=""></li>
-                        </ul>
-                    </div>
+                    <ul class="gallery_con">
+                        <li>
+                            <img src="../images/skill/img_gallery01.jpg" alt="">
+                            <p>LUMOS BP</p>
+                        </li>
+                        <li>
+                            <img src="../images/skill/img_gallery02.jpg" alt="">
+                            <p>LUMOS VU</p>
+                        </li>
+                        <li>
+                            <img src="../images/skill/img_gallery03.jpg" alt="">
+                            <p>AI CDSS</p>
+                        </li>
+                        <li>
+                            <img src="../images/skill/img_gallery04.jpg" alt="">
+                            <p>LUMOS BP</p>
+                        </li>
+                        <li>
+                            <img src="../images/skill/img_gallery05.jpg" alt="">
+                            <p>LUMOS VU</p>
+                        </li>
+                        <li>
+                            <img src="../images/skill/img_gallery06.jpg" alt="">
+                            <p>AI CDSS</p>
+                        </li>
+                    </ul>
                 </div>
+
             </section>
         </main>
         <!-- //본문내용 -->

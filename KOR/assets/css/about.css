@@ -1,9 +1,8 @@
 @charset "utf-8";
 
-
 /* 회사소개 */
 .overview_con1{position:relative;}
-.overview_con2{position:relative;background:url('../../images/about/img_overview01.jpg') 50% top/cover;color:var(--white);margin:160px 0 -180px;padding-bottom:160px;}
+.overview_con2{position:relative;background:url('../../images/about/img_overview01.jpg') 50% top/cover;color:var(--white);margin-top:160px;padding-bottom:160px;}
 .overview_con2 .con_title{color:var(--white);}
 .overview_con2 dl{position:relative;display:flex;flex-wrap:wrap;}
 .overview_con2 dl:after{content:'';position:absolute;top:0;left:26%;width:1px;height:100%;background:rgba(255, 255, 255, 0.2);}
@@ -12,9 +11,15 @@
 .overview_con2 dl dd{width:65%;font-weight:700;padding:var(--size50) 0;}
 
 /* 협력사/기관 */
-.partner_con ul{display:flex;flex-wrap:wrap;align-items:center;gap:0 90px;}
-.partner_con ul li{display:flex;align-items:center;justify-content:center;width:22.6vw;height:22.6vw;border:1px solid var(--grayddd);border-radius:500px;margin-bottom:var(--size50)}
+.partner_con ul{display:flex;flex-wrap:wrap;align-items:center;gap:0 70px;}
+.partner_con ul li{display:flex;align-items:center;justify-content:center;width:340px;height:340px;border:1px solid var(--grayddd);border-radius:500px;margin-bottom:var(--size50);}
 .partner_con ul li img{width:80%;}
+
+/* 소식 */
+.notice_con{border:1px solid var(--grayeee);padding:var(--size60);}
+.notice_con li{display:flex;}
+.notice_con li span{display:inline-block;}
+.notice_con li span:nth-of-type(1){font-size:var(--size24);font-weight:700;color:var(--gray222);margin-right:var(--size40);}
 
 /* 찾아오시는길 */
 .location_con1{overflow:hidden;}
@@ -62,11 +67,14 @@
 
 /* 모바일 */
 @media screen and (max-width: 767.98px) {
-  .overview_con2{margin:80px 0 -120px;padding-bottom:100px;}
+  .overview_con2{margin-top:80px;padding-bottom:100px;}
   .overview_con2 dl dt:after{top:50px;left:72.3%;width:10px;height:10px;}
 
   .partner_con ul{gap:0 20px;}
   .partner_con ul li{width:26vw;height:26vw;margin-bottom:var(--size20);}
+
+  .notice_con{padding:var(--size30) var(--size20);}
+  .notice_con li span:nth-of-type(1){margin-right:var(--size20);}
 
   .location_con2{margin-top:var(--size50);}
   .location_con2 > div:nth-child(1){width:100%;}

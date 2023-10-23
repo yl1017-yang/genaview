@@ -1,6 +1,20 @@
 @charset "utf-8";
 
-/* 주요실적 */
+.skill_con1{display:flex;justify-content:space-between;}
+.skill_con1 .con_box .con_txt{margin:var(--size30) 0;}
+
+.skill_con2{position:relative;margin-top:var(--size100);}
+
+.table_list{border-top:1px solid var(--gray222);}
+.table_list thead th{font-size:var(--size16);font-weight:700;color:var(--gray222);padding:var(--size10) 0;border-bottom:1px solid var(--gray222);border-left:1px solid var(--grayeee);}
+.table_list tbody th{color:var(--gray222);border-bottom:1px solid var(--grayeee);}
+.table_list tbody td{font-size:var(--size16);text-align:center;padding:var(--size10) 0;border-bottom:1px solid var(--grayeee);border-left:1px solid var(--grayeee);}
+.table_list thead th:first-child,
+.table_list tbody td:first-child{border-left:0;}
+
+.gallery_con{display:flex;flex-wrap:wrap;gap:0 30px;}
+.gallery_con li{margin-bottom:var(--size50);}
+.gallery_con li p{margin-top:var(--size20);}
 
 
 /* 반응형 */

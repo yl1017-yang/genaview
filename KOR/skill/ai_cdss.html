@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, user-scalable=no" />
+    <meta name="Description" content="젠어뷰(주)" />
+    <meta name="Keywords" content="공초점 내시현미경을 제조하는 의료기기 전문 회사, LUMOS BP, LUMOS VU, AI CDSS" />
+    <meta http-equiv="Author" content="" />
+    <title>젠어뷰(주)</title>
+    <link rel="stylesheet" href="../assets/css/style.css">
+    <script src="../assets/js/jquery-3.4.1.js"></script>
+    <script src="../assets/js/common.js" defer></script>
+    <link rel="stylesheet" href="../assets/css/aos.css">
+    <script src="../assets/js/aos.js"></script>
+    <script>
+        $(function () {
+            $("#header_wrap").load("../include/header.html", function () {
+                gnbMenu(2, 3);
+            });
+            $("#footer_wrap").load("../include/footer.html");
+        });
+    </script>
+</head>
+
+<body>
+    <div class="wrap">
+        <!-- 헤더 -->
+        <div id="header_wrap"></div>
+        <!-- //헤더 -->
+
+        <!-- 본문내용 -->
+        <main class="container">
+            <!-- 서브 비주얼 -->
+            <section class="sub_visual bg_visual_skill" data-aos="fade-zoom-in" data-aos-duration="2000"
+                data-aos-offset="0">
+                <div class="inner">
+                    <div class="visual_title">
+                        <h3 data-aos="fade-up">응용기술</h3>
+                    </div>
+                    <div class="lnb" data-aos="fade-up" data-aos-delay="200">
+                        <ul class="lnbDep1">
+                            <li><a href="../skill/intro.html">기술 소개</a></li>
+                            <li><a href="../skill/range.html">응용 범위</a></li>
+                            <li><a href="../skill/ai_cdss.html">AI CDSS</a></li>
+                            <li><a href="../skill/gallery.html">Gallery</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </section>
+            <!-- //서브 비주얼 -->
+
+            <section class="content">
+                <div class="inner">
+                    <h5 class="con_title" data-aos="fade-up" data-aos-delay="400" data-aos-offset="0">
+                        AI CDSS
+                    </h5>
+                    <div class="skill_con1">
+                        <div class="con_box">
+                            <p class="con_title_dep2">
+                                Ex-Vivo 조건에서 공초점 형광현미경으로 <br>획득한 영상 데이터로 세포를 암/염증/정상 <br>상태로 분류할 수 있는 딥러닝 모델 개발을
+                                <br>진행하고 있습니다.
+                            </p>
+                            <p class="con_txt">
+                                제한된 데이터를 극복하기 위하여 전이학습(Transfer learning) <br>및 데이터 확장(Data augmentation)기술을 적용하고 있습니다.
+                            </p>
+                        </div>
+                        <figure>
+                            <img src="../images/skill/img_ai_cdss01.jpg" alt="">
+                        </figure>
+                    </div>
+                    <div class="skill_con2">
+                        <p>3종의 Machine learning-based method과 비교하여 개발된 딥러닝 모델의 우수성을 확인하였고, 계속하여 알고리즘을 개선 중에 있습니다.</p>
+                        <p>Machine Learning and deep learning performance</p>
+                        <table class="table_list">
+                            <thead>
+                                <tr>
+                                    <th>Methods</th>
+                                    <th>Accuracy</th>
+                                    <th>FPR</th>
+                                    <th>FNR</th>
+                                    <th>Precision</th>
+                                    <th>Recall</th>
+                                    <th>F1-score</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <th>XGB</th>
+                                    <td>0.7495</td>
+                                    <td>0.1401</td>
+                                    <td>0.2578</td>
+                                    <td>0.7591</td>
+                                    <td>0.7423</td>
+                                    <td>0.7488</td>
+                                </tr>
+                                <tr>
+                                    <th>SVM</th>
+                                    <td>0.6981</td>
+                                    <td>0.1673</td>
+                                    <td>0.3195</td>
+                                    <td>0.7191</td>
+                                    <td>0.6806</td>
+                                    <td>0.6786</td>
+                                </tr>
+                                <tr>
+                                    <th>RF</th>
+                                    <td>0.7058</td>
+                                    <td>0.1656</td>
+                                    <td>0.3285</td>
+                                    <td>0.7196</td>
+                                    <td>0.6717</td>
+                                    <td>0.6886</td>
+                                </tr>
+                                <tr>
+                                    <th>Proposed</th>
+                                    <td>0.8173</td>
+                                    <td>0.0964</td>
+                                    <td>0.2408</td>
+                                    <td>0.8186</td>
+                                    <td>0.7588</td>
+                                    <td>0.7784</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+
+                <div class="skill_con3">
+                    <div class="inner">
+                        <p class="con_title_dep2">
+                            Qualitative Results
+                        </p>
+                        <p class="con_txt">
+                            Test data samples (a) and the results of class activation map (b). <br>
+                            Neoplasm examples are shown in the top row, inflammation in the middle row, <br>
+                            and normal in the bottom row, respectively. <br>
+                            Red arrows on neoplasm images indicate the area where the <br>
+                            glands are hard to see, and yellow arrows on normal images indicate <br>
+                            where the glands are uniformly represented. <br>
+                            The arrangement of gland is an important feature on neoplasm <br>
+                            classification task, and it can be seen that CAM focuses well on this area. <br>
+                            The white bars on the lower right of the image indicates the scale 50 μm.
+                        </p>
+                    </div>
+                </div>
+
+            </section>
+        </main>
+        <!-- //본문내용 -->
+
+        <!-- 푸터 -->
+        <div id="footer_wrap"></div>
+        <!-- //푸터 -->
+    </div>
+</body>
+
+</html>
