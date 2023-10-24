@@ -2,8 +2,14 @@
 
 .skill_con1{display:flex;justify-content:space-between;}
 .skill_con1 .con_box .con_txt{margin:var(--size30) 0;}
+.skill_con1 .con_box figure{margin-top:var(--size110);}
 
-.skill_con2{position:relative;margin-top:var(--size100);}
+.skill_con2{position:relative;margin:var(--size100) 0;}
+.skill_con2 .table_title{font-weight:700;color:var(--primary);margin:var(--size20) 0 var(--size10);}
+
+.skill_con3{background:url('../../images/skill/img_ai_cdss02.jpg') 50% 50%/cover;color:var(--white);padding:var(--size120) 0;}
+.skill_con3 .con_title_dep2{color:var(--white);margin-bottom:var(--size10);}
+.skill_con3 figure{margin-top:var(--size50);}
 
 .table_list{border-top:1px solid var(--gray222);}
 .table_list thead th{font-size:var(--size16);font-weight:700;color:var(--gray222);padding:var(--size10) 0;border-bottom:1px solid var(--gray222);border-left:1px solid var(--grayeee);}
@@ -31,20 +37,30 @@
 }
 
 @media screen and (max-width: 1199.98px) {
-
+  .skill_con1 .con_box{width:50%;margin-right:var(--size40);}
+  .skill_con1 .con_box br{display:none;}
+  .gallery_con li{width:31%;}
 }
 
 @media screen and (max-width: 991.98px) {
-
+  .skill_con1 .con_box{width:70%;}
+  .gallery_con li{width:30%;}
 }
 
 /* 모바일 */
 @media screen and (max-width: 767.98px) {
+  .skill_con1{flex-wrap:wrap;}
+  .skill_con1 .con_box{width:100%;margin-right:0;}
+  .skill_con1 .con_box figure{margin-top:var(--size20);}
+  .skill_con1 .con_img{margin-top:var(--size50);}
+  .skill_con2{margin-top:var(--size50);}
 
+  .gallery_con li{width:46%;}
 }
 
 @media all and (max-width: 575.98px) {
-
+  
+  .gallery_con li{width:100%;}
 }
 
 @media all and (max-width: 478.98px) {
