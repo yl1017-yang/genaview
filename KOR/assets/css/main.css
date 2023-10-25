@@ -176,20 +176,20 @@
 .main_intro .intro_title{font-size:var(--size90);font-weight:700;color:var(--primary);padding-top:300px;}
 .main_intro .intro_text1{font-size:var(--size28);font-weight:700;color:var(--gray222);margin:var(--size20) 0;}
 .main_intro .intro_text2{font-size:var(--size20);}
-.main_intro .btn_detail{display:inline-block;background:rgba(255, 255, 255, 0.7);margin-top:var(--size60);padding:var(--size20) var(--size100);border-radius:100px;color:var(--gray222);}
-.main_intro .btn_detail:hover{background:var(--primary);}
+.main_intro .btn_detail{display:inline-block;background:rgba(255, 255, 255, 0.7);margin-top:var(--size60);padding:var(--size20) var(--size100);border-radius:100px;color:var(--gray222);transition:all 0.6s;}
+.main_intro .btn_detail:hover{background:var(--primary);color:var(--white);}
 
-.main_product{}
 .main_product > ul{display:flex;}
-.main_product > ul > li{display:flex;flex-direction:column;align-items:center;justify-content:center;width:33.3%;min-height:900px;color:var(--white);}
+.main_product > ul > li{display:flex;flex-direction:column;align-items:center;justify-content:center;width:33.3%;min-height:900px;color:var(--white);transform:scale(1);transition:transform 0.6s;}
+.main_product > ul > li:hover{transform:scale(1.2);}
 .main_product > ul > li:nth-child(1){background:url('../../images/main/img_main_product01.jpg') 50% 50%/cover no-repeat;}
 .main_product > ul > li:nth-child(2){background:url('../../images/main/img_main_product02.jpg') 50% 50%/cover no-repeat;}
 .main_product > ul > li:nth-child(3){background:url('../../images/main/img_main_product03.jpg') 50% 50%/cover no-repeat;}
 
 .main_product > ul > li h3{font-size:var(--size56);font-weight:700;margin-bottom:var(--size30);}
+.main_product > ul > li ul{min-height:250px;}
 .main_product > ul > li ul li{font-size:var(--size22);font-weight:700;text-align:center;}
-
-.main_product .btn_detail{display:inline-block;background:rgba(255, 255, 255, 0.15);margin-top:var(--size160);padding:var(--size6) var(--size40);border-radius:100px;color:var(--white);}
+.main_product .btn_detail{display:inline-block;background:rgba(255, 255, 255, 0.15);padding:var(--size6) var(--size40);border-radius:100px;color:var(--white);}
 
 
 /* 반응형 */
@@ -232,6 +232,8 @@
 
     .main_intro:before{background-size:200%;}
     .main_intro .intro_title{padding-top:var(--size260);}
+    .main_intro .btn_detail{margin-top:var(--size60);padding:var(--size10) var(--size80);}
+    .main_product .btn_detail{margin-top:var(--size80);padding:0 var(--size40);}
 }
 
 @media all and (max-width: 575.98px) {
