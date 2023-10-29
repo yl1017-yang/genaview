@@ -53,7 +53,7 @@ function gnbMenu(depth1, depth2, depth3) {
     // PC 네비게이션
     var $gnb = $('.gnb');
     var $gnbDep1 = $('.gnbDep1', $gnb);
-    var $lnbDep1 = $(".lnb .lnbDep1 > li");
+    var $lnbDep1 = $(".lnb .lnbDep1 > li");    
 
     $gnb.on('focusin mouseenter', function () {
         $(this).children().find('.gnbDep2').stop().slideDown('200');
