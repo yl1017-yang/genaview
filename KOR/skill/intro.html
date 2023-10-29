@@ -17,11 +17,6 @@
         $(function() {            
             $("#header_wrap").load("../include/header.html", function() {
                 gnbMenu(2, 1);
-                console.log(gnbMenu);
-            });
-            $("#lnb_wrap").load("../include/lnb_skill.html", function() {
-                gnbMenu(2, 1);
-                console.log(gnbMenu);
             });
             $("#footer_wrap").load("../include/footer.html");
         });
@@ -36,7 +31,21 @@
         <!-- 본문내용 -->
         <main class="container">
             <!-- 서브 비주얼 -->
-            <div id="lnb_wrap"></div>
+            <section class="sub_visual bg_visual_skill" data-aos="fade-zoom-in" data-aos-duration="2000" data-aos-offset="0">
+                <div class="inner">
+                    <div class="visual_title">
+                        <h3 data-aos="fade-up">응용기술</h3>
+                    </div>
+                    <div class="lnb" data-aos="fade-up" data-aos-delay="200">
+                        <ul class="lnbDep1">
+                            <li><a href="../skill/intro.html">기술 소개</a></li>
+                            <li><a href="../skill/range.html">응용 범위</a></li>
+                            <li><a href="../skill/ai_cdss.html">AI CDSS</a></li>
+                            <li><a href="../skill/gallery.html">Gallery</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </section>
             <!-- //서브 비주얼 -->
 
             <section class="content">
