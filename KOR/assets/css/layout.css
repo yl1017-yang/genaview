@@ -83,7 +83,7 @@ html, body{-webkit-tap-highlight-color:transparent !important}
 .footer .footer_info .menu a:hover{text-decoration:underline;}
 
 /* 서브 */
-.sub_visual{position:relative;margin-top:100px;min-height:600px;background-position:50% var(--size200);background-size:cover;background-repeat:no-repeat;overflow:hidden;}
+.sub_visual{position:relative;margin-top:100px;min-height:600px;background-position:50% var(--size200);background-size:contain;background-repeat:no-repeat;overflow:hidden;}
 .sub_visual h3{font-size:var(--size64);font-weight:700;color:var(--gray222);padding-top:var(--size80);line-height:1;}
 
 .bg_visual_about{background-image:url('../../images/about/img_visual_about.jpg');}
