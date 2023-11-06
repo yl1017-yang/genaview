@@ -3,6 +3,7 @@
 .product_con1{display:flex;justify-content:space-between;}
 .product_con1 .con_box .con_txt span{display:block;margin:var(--size30) 0;}
 .product_con1 .img2{margin-bottom:-450px;z-index:1;}
+.product_con1 .img3{padding-right:100px;}
 
 .product_con2{position:relative;margin-top:var(--size100);}
 .product_con2 > p{position:absolute;top:-130px;left:0;font-size:var(--size140);font-weight:900;-webkit-text-stroke:1px var(--grayddd);color:rgba(255, 255, 255, 0);}
@@ -36,6 +37,7 @@
   .product_con1 .con_box .con_txt span{margin:var(--size20) 0;}
   .product_con1 figure{width:80%;}
   .product_con1 .img2{margin-bottom:0;}
+  .product_con1 .img3{margin-top:50px;padding-right:0;}
   .product_con2 > p{top:-50px;font-size:var(--size70);}
 }
 
