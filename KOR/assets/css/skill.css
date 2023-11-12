@@ -19,9 +19,19 @@
 .table_list tbody td:first-child{border-left:0;}
 
 .gallery_con{display:flex;flex-wrap:wrap;gap:0 30px;}
-.gallery_con li{margin-bottom:var(--size50);}
+.gallery_con li{width:31%;margin-bottom:var(--size50);}
 .gallery_con li p{margin-top:var(--size20);}
 
+/* 갤러리 모달팝업 */
+.btn_pop{display:block;}
+.pop_wrap{position:fixed;top:0;left:0;right:0;bottom:0;background:rgba(0,0,0,0.8);opacity:0;visibility:hidden;z-index:-1;transition: opacity 250ms 250ms ease, transform 300ms 250ms ease;}
+.pop_wrap.on{opacity:1;z-index:1998;visibility:visible;overflow:auto;-webkit-overflow-scrolling:touch;}
+.pop_wrap .pop_inner{width:100%;min-height:100%;display:flex;justify-content:center;align-items:center;}
+.pop_wrap .pop_content{position:relative;width:600px;box-shadow:3px 3px 20px 0 rgba(0,0,0,.1);}
+.pop_wrap .pop_content p{color:#fff;padding-bottom:20px;}
+.pop_wrap .pop_close{display:block;position:absolute;width:40px;height:40px;right:10px;top:0px;text-indent:-999em;overflow:hidden}
+.pop_wrap .pop_close:before{content:'';display:block;position:absolute;width:30px;height:2px;left:26%;top:47%;background-color:#fff;transform:rotate(-45deg);-webkit-transform:rotate(-45deg);-moz-transform:rotate(-45deg);-o-transform:rotate(-45deg);-ms-transform:rotate(-45deg);}
+.pop_wrap .pop_close:after{content:'';display:block;position:absolute;width:30px;height:2px;left:26%;top:47%;background-color:#fff;transform:rotate(45deg);-webkit-transform:rotate(45deg);-moz-transform:rotate(45deg);-o-transform:rotate(45deg);-ms-transform:rotate(45deg);}
 
 /* 반응형 */
 @media all and (max-width: 1918.98px) {
@@ -56,10 +66,12 @@
   .skill_con2{margin-top:var(--size50);}
 
   .gallery_con li{width:46%;}
+  .pop_wrap .pop_content{width:90%;}
 }
 
 @media all and (max-width: 575.98px) {
-  
+  .btn_pop{cursor:default;}
+  .pop_wrap{display:none;}
   .gallery_con li{width:100%;}
 }
 

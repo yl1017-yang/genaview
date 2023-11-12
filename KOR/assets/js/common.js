@@ -46,7 +46,35 @@ $(function () {
             $(".slider-main .swiper-scrollbar .swiper-pagination").removeClass("animate");
         }
     });
+});
 
+$(function(){
+    function openPop(href){
+        $('.pop_wrap' + href).addClass('on');
+    }
+    
+    $('.btn_pop').on('click',function(){
+        var href = $(this).attr("href");
+        openPop(href);
+        $('body').css({'height':$(window).height(), 'overflow':'hidden'});
+    });
+    
+    function closePop() {
+        $('.pop_wrap').removeClass('on');
+        $('body').css({'height':'auto', 'overflow':'auto'});
+    }
+    
+    $('.pop_wrap .pop_close').on('click', function(e){
+        e.preventDefault();
+        closePop();
+    });
+    
+    // 빈영역 클릭 닫기
+    $('.pop_wrap').on('click', function (e) {
+        if ($(e.target).is('.pop_inner') == true) {
+            closePop();
+        }
+    });    
 });
 
 function gnbMenu(depth1, depth2, depth3) {

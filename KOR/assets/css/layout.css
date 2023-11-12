@@ -70,7 +70,7 @@ html, body{-webkit-tap-highlight-color:transparent !important}
 
 /* 하단 */
 #footer_wrap{width:100%;background:var(--gray222);}
-.footer{position:relative;padding:var(--size80) 0}
+.footer{position:relative;padding:var(--size50) 0}
 .footer .footer_info{display:flex;flex-wrap:wrap;justify-content:space-between;align-items:center;font-size:var(--size16);color:var(--gray999);}
 .footer .footer_info:nth-of-type(2){border-top:1px solid var(--gray555);margin-top:var(--size40);padding-top:var(--size20);}
 .footer .footer_info address{color:var(--grayddd);line-height:1.8;}
